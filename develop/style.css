@@ -1,0 +1,26 @@
+
+.block-container {
+  border: 2px solid rgb(52, 50, 50) ;
+  align-self: auto;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 25px;
+  position: relative;
+}
+
+.form-field {
+  margin: 10px;
+}
+
+button {
+  margin-left: 60px;
+}
+
+.heading {
+  position: absolute;
+  top: -10px;
+  background-color: white;
+  padding: 0 2px;
+  margin-left: 10px;
+}
