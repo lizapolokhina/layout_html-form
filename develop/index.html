@@ -9,144 +9,146 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+
+      <fieldset class="block-container">
+        <legend class="heading">Personal information</legend>
+
+        <div class="form-field">
+          <label for="surname" >Surname:</label>
+          <input type="text" name="Surname">
+        </div>
+
+        <div class="form-field">
+          <label for="name">Name:</label>
+          <input type="text" name="name">
+        </div>
+
+        <div class="form-field">
+          <label for="age">How old are you?</label>
+          <input type="text"
+          name="age"
+          value="12"
+          readonly>
+        </div>
+
+        <div class="form-field">
+          <label for="dateOfBirth">Full date of birth:</label>
+          <input type="text"
+          name="dateOfBirth"
+          placeholder="mm/dd/yyyy">
+        </div>
+
+        <div class="form-field">
+          <label for="agreement">I accept the term of the agreement:</label>
+          <input type="checkbox" name="agreement">
+        </div>
+
+      </fieldset>
+
+      <fieldset class="block-container">
+        <legend class="heading">Registration</legend>
+
+        <div class="form-field">
+          <label for="email">Email:</label>
+          <input type="email"
+          name="email"
+          placeholder="email@example.com">
+        </div>
+        <div class="form-field">
+          <label for="password">Password:</label>
+          <input type="password" name="password">
+        </div>
+      </div>
+
+      </fieldset>
+
+
+      <fieldset class="block-container">
+        <legend class="heading">An interesting fact about you!</legend>
+
+        <div class="form-field">
+          <label for="loveToCats">Do you love cats?</label>
+          <label>
+            <input type="radio"
+          name="ans"
+          value="yes">
+           Yes
+          </label>
+
+          <label>
+            <input type="radio"
+          name="ans"
+          value="no">
+           No
+          </label>
+        </div>
+
+        <div class="form-field">
+          <label for="color">
+        What is your favourite color?
+            <input type="color">
+          </label>
+        </div>
+
+        <div class="form-field">
+          <label for="time">
+        What time do you go to bed?
+            <input type="time">
+          </label>
+        </div>
+
+        <div class="form-field">
+          <label for="car">
+        What are your favourite brands of cars?
+
+            <select name="car" multiple>
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="form-field">
+          <label for="rating">
+        How do you rate our work?
+
+            <input type="range">
+          </label>
+        </div>
+
+      </fieldset>
+
+
+      <fieldset class="block-container">
+        <legend class="heading">Additional info</legend>
+
+        <div class="form-field">
+          <label for="comment">
+        Comments:
+            <textarea name="comment"
+            cols="15"
+            rows="2">
+            </textarea>
+          </label>
+        </div>
+
+        <div class="form-field">
+          <label for="recommed">
+         Would you recommend us?
+            <select name="recommed">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </label>
+        </div>
+
+      </fieldset>
+
+      <button>Submit</button>
     </form>
 
-    <div class="block-container">
 
-      <span class="heading">Personal information</span>
-
-      <div class="form-field">
-        Surname:
-        <input type="text" name="Surname">
-      </div>
-
-      <div class="form-field">
-       Name:
-        <input type="text" name="name">
-      </div>
-
-      <div class="form-field">
-       How old are you?
-        <input type="text"
-        name="age"
-        value="12"
-        readonly>
-      </div>
-
-      <div class="form-field">
-       Full date of birth:
-        <input type="text"
-        name="dateOfBirth"
-        placeholder="mm/dd/yyyy">
-      </div>
-
-      <div class="form-field">
-       I accept the term of the agreement:
-        <input type="checkbox" name="agreement">
-      </div>
-    </div>
-
-    <div class="block-container">
-      <span class="heading">Registration</span>
-
-      <div class="form-field">
-        Email:
-        <input type="email"
-        name="email"
-        placeholder="email@example.com">
-      </div>
-      <div class="form-field">
-    Password:
-    <input type="password" name="password">
-  </div>
-    </div>
-  
-</div>
-
-
-  <div class="block-container">
-    <span class="heading">An interesting fact about you!</span>
-
-    <div class="form-field">
-    Do you love cats?
-      <label>
-        <input type="radio"
-        name="ans"
-        value="yes">
-         Yes
-      </label>
-
-      <label>
-        <input type="radio"
-        name="ans"
-        value="no">
-         No
-      </label>
-    </div>
-
-    <div class="form-field">
-      <label for="color">
-      What is your favourite color?
-        <input type="color">
-      </label>
-    </div>
-
-    <div class="form-field">
-      <label for="time">
-      What time do you go to bed?
-        <input type="time">
-      </label>
-    </div>
-
-    <div class="form-field">
-      <label for="car">
-      What are your favourite brands of cars?
-
-        <select name="car" multiple>
-          <option value="BMW">BMW</option>
-          <option value="Audi">Audi</option>
-          <option value="Lada">Lada</option>
-        </select>
-      </label>
-    </div>
-
-    <div class="form-field">
-      <label for="rating">
-      How do you rate our work?
-
-        <input type="range">
-      </label>
-    </div>
-
-  </div>
-
-
-  <div class="block-container">
-    <span class="heading">Additional info</span>
-
-    <div class="form-field">
-      <label for="comment">
-      Comments:
-        <textarea name="comment"
-        cols="15"
-        rows="2">
-        </textarea>
-      </label>
-    </div>
-
-    <div class="form-field">
-      <label for="recommed">
-       Would you recommend us?
-        <select name="recommed">
-          <option value="yes">yes</option>
-          <option value="no">no</option>
-        </select>
-      </label>
-    </div>
-
-  </div>
-
-  <button>Submit</button>
   </body>
 
 
