@@ -12,140 +12,138 @@
 
       <fieldset class="block-container">
         <legend class="heading">Personal information</legend>
+        <div class="form-field">
+          <label for="surname" >Surname:</label>
+          <input type="text" name="Surname">
+        </div>
 
-          <div class="form-field">
-            <label for="surname" >Surname:</label>
-            <input type="text" name="Surname">
-          </div>
+        <div class="form-field">
+          <label for="name">Name:</label>
+          <input type="text" name="name">
+        </div>
 
-          <div class="form-field">
-            <label for="name">Name:</label>
-            <input type="text" name="name">
-          </div>
-
-          <div class="form-field">
-            <label for="age">How old are you?</label>
-            <input type="text"
+        <div class="form-field">
+          <label for="age">How old are you?</label>
+          <input type="text"
             name="age"
             value="12"
-            readonly>
-          </div>
+            readonly
+          >
+        </div>
 
-          <div class="form-field">
-            <label for="dateOfBirth">Full date of birth:</label>
-            <input type="text"
+        <div class="form-field">
+          <label for="dateOfBirth">Full date of birth:</label>
+          <input type="text"
             name="dateOfBirth"
-            placeholder="mm/dd/yyyy">
-          </div>
+            placeholder="mm/dd/yyyy"
+          >
+        </div>
 
-          <div class="form-field">
-            <label for="agreement">I accept the term of the agreement:</label>
-            <input type="checkbox" name="agreement">
-          </div>
-
+        <div class="form-field">
+          <label for="agreement">I accept the term of the agreement:</label>
+          <input type="checkbox" name="agreement">
+        </div>
       </fieldset>
 
       <fieldset class="block-container">
         <legend class="heading">Registration</legend>
 
-          <div class="form-field">
-            <label for="email">Email:</label>
-            <input type="email"
+        <div class="form-field">
+          <label for="email">Email:</label>
+          <input type="email"
             name="email"
             placeholder="email@example.com">
-          </div>
-          <div class="form-field">
-            <label for="password">Password:</label>
-            <input type="password" name="password">
-          </div>
         </div>
-
+        <div class="form-field">
+          <label for="password">Password:</label>
+          <input type="password" name="password">
+        </div>
+        </div>
       </fieldset>
 
 
       <fieldset class="block-container">
         <legend class="heading">An interesting fact about you!</legend>
 
-          <div class="form-field">
-            <label for="loveToCats">Do you love cats?</label>
-            <label>
-              <input type="radio"
-            name="ans"
-            value="yes">
-            Yes
-            </label>
-
-            <label>
-              <input type="radio"
+        <div class="form-field">
+          <label for="loveToCats">Do you love cats?</label>
+          <label>
+            <input type="radio"
               name="ans"
-              value="no">
+              value="yes">
+              Yes
+          </label>
+
+          <label>
+            <input type="radio"
+              name="ans"
+              value="no"
+            >
               No
-            </label>
-          </div>
+          </label>
+        </div>
 
-          <div class="form-field">
-            <label for="color">
+        <div class="form-field">
+          <label for="color">
             What is your favourite color?
-              <input type="color">
-            </label>
-          </div>
+            <input type="color">
+          </label>
+        </div>
 
-          <div class="form-field">
-            <label for="time">
+        <div class="form-field">
+          <label for="time">
             What time do you go to bed?
-              <input type="time">
-            </label>
-          </div>
+            <input type="time">
+          </label>
+        </div>
 
-          <div class="form-field">
-            <label for="car">
+        <div class="form-field">
+          <label for="car">
             What are your favourite brands of cars?
 
-              <select name="car" multiple>
-                <option value="BMW">BMW</option>
-                <option value="Audi">Audi</option>
-                <option value="Lada">Lada</option>
-              </select>
-            </label>
-          </div>
+            <select name="car" multiple>
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </label>
+        </div>
 
-          <div class="form-field">
-            <label for="rating">
+        <div class="form-field">
+          <label for="rating">
             How do you rate our work?
 
-              <input type="range">
-            </label>
-          </div>
-
+            <input type="range">
+          </label>
+        </div>
       </fieldset>
-
 
       <fieldset class="block-container">
         <legend class="heading">Additional info</legend>
 
-          <div class="form-field">
-            <label for="comment">
+        <div class="form-field">
+          <label for="comment">
             Comments:
-              <textarea name="comment"
+            <textarea name="comment"
               cols="15"
-              rows="2">
-              </textarea>
-            </label>
-          </div>
+              rows="2"
+            >
+            </textarea>
+          </label>
+        </div>
 
-          <div class="form-field">
-            <label for="recommed">
+        <div class="form-field">
+          <label for="recommed">
             Would you recommend us?
-              <select name="recommed">
-                <option value="yes">yes</option>
-                <option value="no">no</option>
-              </select>
-            </label>
-          </div>
-
+            <select name="recommed">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </label>
+        </div>
       </fieldset>
 
-        <button>Submit</button>
+      <button>Submit</button>
     </form>
 
 
